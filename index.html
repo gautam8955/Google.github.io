@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>google.com</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<ul class="navbar">
+	<li><a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Drm%26ogbl&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="gmail">Gmail</a></li>
+	<li><a href="https://www.google.co.in/imghp?hl=en&tab=ri&ogbl" class="image">Images</a></li>
+	</ul>
+
+
+		<img src="google.png">
+		<input type="text" name="search" placeholder="Search Google" id="search" onkeypress="myFunction(event)">
+		
+	<div class="tabs">
+		<div>
+			<a href="https://www.youtube.com/"><img src="youtube.png" class="i1"></a>
+
+		</div>
+		<div>
+			<a href="https://www.facebook.com/"><img src="facebook.png" class="i2"></a>
+			
+		</div>	
+		<div>
+			<a href="https://www.udemy.com/"><img src="udemy.png" class="i3"></a>
+			
+		</div>
+		<div>
+			<a href="https://twitter.com/explore"><img src="twitter.png" class="i4"></a>
+			
+		</div>	
+	</div>				
+		<script type="text/javascript">
+		function myFunction(event) {
+			var search = document.getElementById("search").value;
+	 		var x = event.which || event.keyCode;
+ 			if(x === 13){
+ 				var search1 = "https://www."+search+".com/";
+
+    		window.location.assign(search1);
+    }
+} 	
+
+		</script>
+</body>
+</html>
